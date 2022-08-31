@@ -12,4 +12,8 @@ public class GreetMachine {
     public String toString() {
         return "Greetings " + name + "!";
     }
+
+    public void setName(String name_in) {
+        
+    }
 }

@@ -1,11 +1,20 @@
 public class Greeter {
     public static void main(String[] args) {
 
-        String DEFAULT_NAME = "people of Earth";
+        GreetMachine gm;
 
-        String name =
-            args.length > 0 ? args[0] : DEFAULT_NAME;
-        System.out.printf("Greetings, %s!\n",name);
+        if (args.length > 0) {
+            gm = new GreetMachine(args[0]);
+        } else {
+            gm = new GreetMachine();
+        }
+
+        System.out.println(gm);
+
+        gm.setName("Bill");
+        System.out.println("After setName");
+        System.out.println(gm);
+
         System.out.println("Have a nice day");
     }
 }

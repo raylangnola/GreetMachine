@@ -1,8 +1,11 @@
 public class GreetMachine {
+
+    private final String DEFAULT_NAME = "People of Earth";
+
     private String name;
 
     public GreetMachine() {
-        name = "Earthlings";
+        name = DEFAULT_NAME;
     }
 
     public GreetMachine(String name_in) {
@@ -14,6 +17,6 @@ public class GreetMachine {
     }
 
     public void setName(String name_in) {
-        
+        name = name_in;
     }
 }
